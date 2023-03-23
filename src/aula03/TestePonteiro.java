@@ -1,4 +1,7 @@
-package aula03.classes;
+package aula03;
+
+import aula03.classes.Ponteiro;
+import aula03.classes.RetanguloDois;
 
 public class TestePonteiro {
     public static void main(String[] args) {
@@ -10,8 +13,7 @@ public class TestePonteiro {
 
         retanguloDois.printaOrigem();
 
-        ponteiro.setX(50);
-        ponteiro.setY(50);
+        ponteiro = new Ponteiro(0, 0);
 
         retanguloDois.printaOrigem();
     }
