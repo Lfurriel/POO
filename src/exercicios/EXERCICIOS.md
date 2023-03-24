@@ -1,7 +1,7 @@
 # Exercícios Práticos
 1. Escreva um programa que leia três inteiros e imprima a soma, a média, o produto e o maior e o
    menor elemento lido.
-2. Escreva um programa que leia o raio de um círculo e imprima o diâmetro,  área e circunferˆencia do
+2. Escreva um programa que leia o raio de um círculo e imprima o diâmetro,  área e circunferência do
    círculo. Os resultados devem ser escritos com duas casas decimais.
 3. Crie um programa que leia dois números inteiros e determine se um  é múltiplo do outro.
 4. Escreva um programa que lê um caractere e retorna seu código na tabela ASCII (um número inteiro).
