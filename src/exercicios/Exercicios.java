@@ -1,5 +1,8 @@
 package exercicios;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Exercicios {
@@ -10,7 +13,8 @@ public class Exercicios {
         //exercicioDois(sc);
         //exercicioTres(sc);
         //exercicioQuatro(sc);
-        exercicioCinco(sc);
+        //exercicioCinco(sc);
+        exercicioSeis(sc);
 
     }
 
@@ -89,19 +93,46 @@ public class Exercicios {
             System.out.print("Digite um número: ");
             lista[i] = sc.nextDouble();
         }
-        
-        boolean aux;
+
         double maior1 = 0, maior2 = 0;
         for (double d : lista) {
-            aux = true;
             if(d > maior1) {
                 maior1 = d;
-                aux = false;
             }
-            else if (d > maior2 && aux)
+            else if (d > maior2)
                 maior2 = d;
         }
 
         System.out.println("Os maiores são: " + maior1 + " " + maior2);
+    }
+
+    public static void exercicioSeis(Scanner sc) {
+        Map<String, Double> mapa = new HashMap<>();
+        double valor;
+        final double fixo = 200.0;
+        String nome;
+
+        System.out.println("<-1> Sair");
+        do {
+            valor = -1;
+            System.out.print("Nome do vendedor: ");
+            nome = sc.nextLine();
+            if(!nome.equals("-1")) {
+                System.out.print("Digite valor total de vendas: ");
+                valor = sc.nextDouble();
+
+                if(valor != -1) {
+                    valor = fixo + (0.09 * valor);
+                    mapa.put(nome, valor);
+                }
+                sc.nextLine();
+            }
+        } while (valor != -1);
+
+        System.out.println("\n\n-------------------------------");
+
+        for (String m: mapa.keySet()) {
+            System.out.println("Vendedor: " + m + " - Salário: R$" + mapa.get(m).toString());
+        }
     }
 }
