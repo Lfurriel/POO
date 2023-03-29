@@ -2,8 +2,6 @@ package figurasGeometricas;
 
 import aula03.classes.Ponteiro;
 
-import java.awt.*;
-
 public class RetanguloDois {
 
     float altura;
@@ -44,11 +42,11 @@ public class RetanguloDois {
 
 
     public void setOrigem(Ponteiro org) {
-        this.origem.x = org.getX();
-        this.origem.y = org.getY();
+        this.origem.setX(org.getX());
+        this.origem.setY(org.getY());
     }
 
     public void printaOrigem() {
-        System.out.println(origem.x + " " + origem.y);
+        System.out.println(origem.getX() + " " + origem.getY());
     }
 }

@@ -2,6 +2,9 @@ package exercicios;
 
 import java.util.*;
 
+import figurasGeometricas.Circulo;
+import figurasGeometricas.Quadrado;
+import figurasGeometricas.Triangulo;
 import utils.Utils;
 
 public class Exercicios {
@@ -18,7 +21,8 @@ public class Exercicios {
         //exercicioOito(sc);
         //exercicioNove(sc);
         //exercicioDez(sc);
-        exercicioOnze(sc);
+        //exercicioOnze(sc);
+        exercicioDoze(sc);
 
     }
 
@@ -260,5 +264,27 @@ public class Exercicios {
         }
         if(verifica)
             System.out.println("Não existem caracteres repetidos");
+    }
+
+    private static void exercicioDoze(Scanner sc) {
+
+        System.out.print("Digite o lado do quadrado: ");
+        Quadrado quadrado = new Quadrado(sc.nextDouble());
+        System.out.println("Perímetro: " + quadrado.calculaPerimetro());
+        System.out.println("Área: " + quadrado.calculaArea());
+        System.out.println("Diagonal: " + quadrado.calculaDiagonal());
+
+        System.out.print("\n\nDigite o raio do circulo: ");
+        Circulo circulo = new Circulo(sc.nextDouble());
+        System.out.println("Diâmetro: " + circulo.calculaDiametro());
+        System.out.println("Área: " + circulo.calculaArea());
+        System.out.println("Circuferência: " + circulo.calculaCircuferencia());
+
+        System.out.print("\n\nDigite os lados do triângulo: ");
+        Triangulo triangulo = new Triangulo(sc.nextDouble(), sc.nextDouble(), sc.nextDouble());
+        System.out.println("Perímetro: " + triangulo.calculaPerimetro());
+        System.out.println("É equilátero?: " + triangulo.verificaEquilatero());
+        System.out.println("É isóceles?: " + triangulo.verificaIsoceles());
+        System.out.println("É escaleno?: " + triangulo.verificaEscaleno());
     }
 }
