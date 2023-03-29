@@ -1,9 +1,9 @@
 package banco;
 
 public class Cliente {
-    String nome;
-    long rg;
-    long cpf;
+    private String nome;
+    private long rg;
+    private long cpf;
 
     public Cliente() {
     }
