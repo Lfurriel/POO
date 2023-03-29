@@ -1,7 +1,7 @@
 package aula03;
 
 import aula03.classes.Ponteiro;
-import aula03.classes.RetanguloDois;
+import figurasGeometricas.RetanguloDois;
 
 public class TestePonteiro {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package aula02;
 
-import aula02.classes.Cores;
-import aula02.classes.Retangulo;
+import figurasGeometricas.Cores;
+import figurasGeometricas.Retangulo;
 
 public class Retangulos {
     public static void main(String[] args) {

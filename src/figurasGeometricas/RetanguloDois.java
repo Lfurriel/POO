@@ -1,4 +1,6 @@
-package aula03.classes;
+package figurasGeometricas;
+
+import aula03.classes.Ponteiro;
 
 import java.awt.*;
 

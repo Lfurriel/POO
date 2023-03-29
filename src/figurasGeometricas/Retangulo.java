@@ -1,4 +1,4 @@
-package aula02.classes;
+package figurasGeometricas;
 
 public class Retangulo {
     private String nome;
