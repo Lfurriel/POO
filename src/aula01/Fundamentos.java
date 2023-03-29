@@ -61,16 +61,16 @@ public class Fundamentos {
         System.out.println("\tSexo: " + gato.getSexo());
         System.out.println("\tVidas: " + gato.getVidas());
 
-        gato.brincar(gato, cachorro);
+        gato.brincar(cachorro);
         gato.miar();
 
-        cachorro.brincar(gato, cachorro);
+        cachorro.brincar(gato);
         cachorro.latir();
 
-        System.out.println("\n\nO gachorro brincou e agora pegou " + cachorro.pegarBolinha(cachorro) + " bolinhas");
+        System.out.println("\n\nO gachorro brincou e agora pegou " + cachorro.pegarBolinha() + " bolinhas");
 
         System.out.println("\n\nO gato perdeu uma vida");
-        gato.perderVidas(gato);
+        gato.perderVidas();
 
         Arvore arvore = new Arvore();
         arvore.setNome("Arvore do Pedro");
@@ -80,7 +80,5 @@ public class Fundamentos {
         arvore.setCO2(10);
 
         System.out.println(arvore.fotosintetizar());
-
-
     }
 }

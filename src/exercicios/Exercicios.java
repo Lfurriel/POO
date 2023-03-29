@@ -22,7 +22,7 @@ public class Exercicios {
 
     }
 
-    public static void exercicioUm(Scanner sc) {
+    private static void exercicioUm(Scanner sc) {
         int a, b, c;
         System.out.print("Digite o numero 1: ");
         a = sc.nextInt();
@@ -59,7 +59,7 @@ public class Exercicios {
         System.out.println("MENOR: " + menor);
     }
 
-    public static void exercicioDois(Scanner sc) {
+    private static void exercicioDois(Scanner sc) {
         double raio;
         double pi = Math.PI;
 
@@ -71,7 +71,7 @@ public class Exercicios {
         System.out.printf("Área: %.2f", (pi * raio * raio));
     }
 
-    public static void exercicioTres(Scanner sc) {
+    private static void exercicioTres(Scanner sc) {
         System.out.print("Digite o primeiro número inteiro: ");
         int num1 = sc.nextInt();
 
@@ -84,13 +84,13 @@ public class Exercicios {
             System.out.println("Não são múltiplos.");
     }
 
-    public static void exercicioQuatro(Scanner sc) {
+    private static void exercicioQuatro(Scanner sc) {
         System.out.print("Digite o caractere: ");
         char c = sc.next().charAt(0);
         System.out.println("O carctere " + c + " tem o código " + (int) c + " na tabela ASCII");
     }
 
-    public static void exercicioCinco(Scanner sc) {
+    private static void exercicioCinco(Scanner sc) {
         double[] lista = new double[15];
 
         for (int i = 0; i < 15; i++) {
@@ -110,7 +110,7 @@ public class Exercicios {
         System.out.println("Os maiores são: " + maior1 + " " + maior2);
     }
 
-    public static void exercicioSeis(Scanner sc) {
+    private static void exercicioSeis(Scanner sc) {
         Map<String, Double> mapa = new LinkedHashMap<>();
         double valor;
         final double fixo = 200.0;
@@ -141,7 +141,7 @@ public class Exercicios {
         }
     }
 
-    public static void exercicioSete(Scanner sc) {
+    private static void exercicioSete(Scanner sc) {
         int n = sc.nextInt();
         double e = 0.0;
         for (int i = 1; i <= n; i++)
@@ -150,7 +150,7 @@ public class Exercicios {
         System.out.println(e);
     }
 
-    public static void exercicioOito(Scanner sc) {
+    private static void exercicioOito(Scanner sc) {
         int[] numeros = new int[15];
 
         System.out.println("Digite 12 numeros: ");
@@ -167,7 +167,7 @@ public class Exercicios {
         }
     }
 
-    public static void exercicioNove(Scanner sc) {
+    private static void exercicioNove(Scanner sc) {
         int[] numeros = new int[15];
         int maiores10 = 0, menores8 = 0;
         System.out.println("Digite 12 numeros: ");
@@ -184,7 +184,7 @@ public class Exercicios {
         System.out.println("Porcentagem maiores que 10: " + (maiores10 * 100 / 12) + "%");
     }
 
-    public static void exercicioDez(Scanner sc) {
+    private static void exercicioDez(Scanner sc) {
         int[][] numeros;
         System.out.println("Digite o lado do quadrado mágico: ");
         int n = sc.nextInt();
@@ -244,7 +244,7 @@ public class Exercicios {
             System.out.println("Não é quadrado magico");
     }
 
-    public static void exercicioOnze(Scanner sc) {
+    private static void exercicioOnze(Scanner sc) {
         System.out.print("Digite uma string: ");
         String str = sc.nextLine();
         boolean verifica = true;

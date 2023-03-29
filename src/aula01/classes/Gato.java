@@ -12,15 +12,15 @@ public class Gato extends Animal {
         this.vidas = vidas;
     }
 
-    public void brincar(Gato gato, Cachorro cachorro) {
-        System.out.println("O gato " + gato.getNome() + " brincou com o cachorro " + cachorro.getNome());
+    public void brincar(Cachorro cachorro) {
+        System.out.println("O gato " + this.getNome() + " brincou com o cachorro " + cachorro.getNome());
     }
 
     public void miar() {
         System.out.println("miau");
     }
 
-    public void perderVidas(Gato gato) {
+    public void perderVidas() {
         this.vidas--;
         if (vidas <= 0)
             System.out.println("O gato foi de arrasta pra cima");

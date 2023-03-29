@@ -12,17 +12,16 @@ public class Cachorro extends Animal {
         this.bolinhasPegas = bolinhasPegas;
     }
 
-    public void brincar(Gato gato, Cachorro cachorro) {
-        System.out.println("O cachorro " + cachorro.getNome() + " brincou com o gato " + gato.getNome());
+    public void brincar(Gato gato) {
+        System.out.println("O cachorro " + this.getNome() + " brincou com o gato " + gato.getNome());
     }
 
     public void latir() {
         System.out.println("auau");
     }
 
-    public int pegarBolinha(Cachorro cachorro) {
+    public int pegarBolinha() {
         this.bolinhasPegas++;
         return bolinhasPegas;
     }
-
 }
