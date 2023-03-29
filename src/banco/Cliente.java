@@ -1,4 +1,4 @@
-package aula03.classes;
+package banco;
 
 public class Cliente {
     String nome;

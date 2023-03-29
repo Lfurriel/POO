@@ -1,8 +1,7 @@
-package aula03.classes;
+package banco;
 
 public class Conta {
     private Cliente cliente;
-    private static final int agencia = 1;
     private static int contador = 1;
     private int conta;
     private double saldo;

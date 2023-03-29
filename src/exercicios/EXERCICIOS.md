@@ -24,15 +24,12 @@
     da matriz e depois digita os valores.
 11. Escreva um programa que leia uma string do usuário e verifique se ela contém apenas caracteres
     únicos.
-12. Escreva uma classe Quadrado que tenha uma variável de instância para representar o lado do
-    quadrado. Adicione métodos para calcular a área e o perímetro do quadrado.
-13. Escreva uma classe Círculo que tenha uma variável de instância para representar o raio do
-    círculo. Adicione métodos para calcular a área e a circunferência do círculo.
-14. Escreva uma classe Triângulo que tenha três variáveis de instância para representar os lados
-    do triângulo. Adicione métodos para calcular a área e o perímetro do triângulo.
-15. Escreva um programa que crie objetos do tipo Quadrado, Círculo e Triângulo e imprima suas
+12. a) Escreva uma classe Quadrado que tenha uma variável de instância para representar o lado do
+    quadrado. Adicione métodos para calcular a área e o perímetro do quadrado. b) Escreva uma classe Círculo que tenha uma variável de instância para representar o raio do
+    círculo. Adicione métodos para calcular a área e a circunferência do círculo. c) Escreva uma classe Triângulo que tenha três variáveis de instância para representar os lados
+    do triângulo. Adicione métodos para calcular a área e o perímetro do triângulo. d) Escreva um programa que crie objetos do tipo Quadrado, Círculo e Triângulo e imprima suas
     áreas e perímetros.
-16. Crie uma classe Conta que tenha os seguintes campos privados: Nome; CPF (pode usar long); Saldo
+13. Crie uma classe Conta que tenha os seguintes campos privados: Nome; CPF (pode usar long); Saldo
     R$; Número da conta; Agência. Para cada um dos campos disponibilize um método set e get. Faça
     um método para depósito (que recebe um valor) e outro método para saque da conta (que recebe
     um valor e retorna ele).
