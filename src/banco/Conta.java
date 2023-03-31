@@ -38,7 +38,7 @@ public class Conta {
         return senha;
     }
 
-    public void menu(Scanner sc) {
+    public void operacoes(Scanner sc) {
         boolean senhaIncorreta;
         int tentativas = 1;
         String senha;
@@ -91,20 +91,17 @@ public class Conta {
     }
 
 
-    public void depositar(double deposito) {
+    private void depositar(double deposito) {
 
         this.saldo += deposito;
         System.out.println("Seu novo saldo: R$" + this.saldo);
     }
 
-    public void sacar(double saque) {
+    private void sacar(double saque) {
         if (this.saldo > saque) {
             this.saldo -= saque;
             System.out.println("Seu novo saldo: R$" + this.saldo);
         } else
             System.out.println("Sem saldo :c ");
     }
-
-
-
 }

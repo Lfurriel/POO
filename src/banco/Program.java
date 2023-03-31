@@ -57,7 +57,7 @@ public class Program {
             do {
                 conta = buscarConta(banco, sc);
             } while (conta == null);
-            conta.menu(sc);
+            conta.operacoes(sc);
             System.out.println("DIGITE <1> CONTINUAR <0> SAIR");
             op = sc.nextInt();
         } while (op != 0);
