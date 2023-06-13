@@ -23,7 +23,7 @@ public class Biscoito extends Produto {
     @Override
     public int compareTo(Object o) {
         Biscoito compare = (Biscoito) o;
-        return Double.compare(getCustoBeneficio(), compare.getCustoBeneficio());
+        return Double.compare(this.getCustoBeneficio(), compare.getCustoBeneficio());
     }
 
     @Override
