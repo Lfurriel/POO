@@ -1,8 +1,6 @@
 package p2.arquivos;
 
 
-import p2.Ponteiro;
-
 import java.io.*;
 import java.util.ArrayList;
 
